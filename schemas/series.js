@@ -14,16 +14,22 @@ export default {
       type: "string"
     },
     {
-      title: "Category",
-      name: "category",
-      type: "reference",
-      to: [{type: "category"}]
-    },
-    {
       title: "Photos",
       name: "photos",
       type: "array",
       of: [{ type: "photo"}]
+    },
+    {
+      title: "Category",
+      name: "category",
+      type: "string",
+      options: {
+        list: [
+          { title: "Commision", value: "commision" },
+          { title: "Personal", value: "personal" }
+        ],
+        layout: "radio"
+      }
     }
   ]
 }
