@@ -14,7 +14,14 @@ export default {
       type: "string"
     },
     {
-      title: "Photos",
+      titles: "Display Photos",
+      name: "display_photos",
+      type: "array",
+      of: [{ type: "photo"}],
+      validation: Rule => Rule.required().max(3)
+    },
+    {
+      title: "All Photos",
       name: "photos",
       type: "array",
       of: [{ type: "photo"}]

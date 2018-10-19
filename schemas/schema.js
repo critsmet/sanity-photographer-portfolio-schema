@@ -7,6 +7,7 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 //schemas
 import series from './series'
 import photo from './photo'
+
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   name: 'default',
