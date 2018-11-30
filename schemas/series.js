@@ -32,8 +32,8 @@ export default {
       type: "string",
       options: {
         list: [
-          { title: "Commision", value: "commision" },
-          { title: "Personal", value: "personal" }
+          { title: "Commision", value: "Commision" },
+          { title: "Personal", value: "Personal" }
         ],
         layout: "radio"
       }
